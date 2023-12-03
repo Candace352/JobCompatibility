@@ -1,5 +1,4 @@
 import os
-import openai
 from langchain.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
@@ -11,9 +10,10 @@ import io
 import tempfile
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+import openai
 
 # Set OpenAI API key
-openai.api_key = os.environ.get("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")
+openai.api_key = "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"
 
 # Function to open a file dialog and return the selected file path
 def get_resume_paths():
