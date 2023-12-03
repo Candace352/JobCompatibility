@@ -13,7 +13,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
 # Set OpenAI API key
-openai.api_key = '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'
+openai.api_key = os.environ.get("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")
 
 # Function to open a file dialog and return the selected file path
 def get_resume_paths():
