@@ -1,6 +1,5 @@
 import os
 import openai
-from tkinter import Tk, filedialog
 from langchain.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
